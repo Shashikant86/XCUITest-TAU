@@ -15,6 +15,7 @@
 		9B5BC723220F55D20047CFA4 /* TAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC722220F55D20047CFA4 /* TAUTests.swift */; };
 		9B9F7B9C22104562009C9359 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F7B9B22104562009C9359 /* TAUUITests.swift */; };
 		9B9F7BAA22109B3D009C9359 /* TAUUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F7BA922109B3D009C9359 /* TAUUITestBase.swift */; };
+		9B9F7BB62210B27E009C9359 /* BDDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F7BB52210B27E009C9359 /* BDDTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B9F7B9B22104562009C9359 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
 		9B9F7B9D22104562009C9359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9F7BA922109B3D009C9359 /* TAUUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestBase.swift; sourceTree = "<group>"; };
+		9B9F7BB52210B27E009C9359 /* BDDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				9B9F7B9B22104562009C9359 /* TAUUITests.swift */,
 				9B9F7B9D22104562009C9359 /* Info.plist */,
 				9B9F7BA922109B3D009C9359 /* TAUUITestBase.swift */,
+				9B9F7BB52210B27E009C9359 /* BDDTest.swift */,
 			);
 			path = TAUUITests;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9F7BB62210B27E009C9359 /* BDDTest.swift in Sources */,
 				9B9F7B9C22104562009C9359 /* TAUUITests.swift in Sources */,
 				9B9F7BAA22109B3D009C9359 /* TAUUITestBase.swift in Sources */,
 			);
