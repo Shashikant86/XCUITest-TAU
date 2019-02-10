@@ -13,10 +13,18 @@
 		9B5BC715220F55D20047CFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC714220F55D20047CFA4 /* Assets.xcassets */; };
 		9B5BC718220F55D20047CFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC716220F55D20047CFA4 /* LaunchScreen.storyboard */; };
 		9B5BC723220F55D20047CFA4 /* TAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC722220F55D20047CFA4 /* TAUTests.swift */; };
+		9B9F7B9C22104562009C9359 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F7B9B22104562009C9359 /* TAUUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9B5BC71F220F55D20047CFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5BC709220F55C20047CFA4;
+			remoteInfo = TAU;
+		};
+		9B9F7B9E22104562009C9359 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
 			proxyType = 1;
@@ -36,6 +44,9 @@
 		9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC722220F55D20047CFA4 /* TAUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUTests.swift; sourceTree = "<group>"; };
 		9B5BC724220F55D20047CFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9F7B9922104561009C9359 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9F7B9B22104562009C9359 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
+		9B9F7B9D22104562009C9359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B9F7B9622104561009C9359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +79,7 @@
 			children = (
 				9B5BC70C220F55C20047CFA4 /* TAU */,
 				9B5BC721220F55D20047CFA4 /* TAUTests */,
+				9B9F7B9A22104562009C9359 /* TAUUITests */,
 				9B5BC70B220F55C20047CFA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +89,7 @@
 			children = (
 				9B5BC70A220F55C20047CFA4 /* TAU.app */,
 				9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */,
+				9B9F7B9922104561009C9359 /* TAUUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +114,15 @@
 				9B5BC724220F55D20047CFA4 /* Info.plist */,
 			);
 			path = TAUTests;
+			sourceTree = "<group>";
+		};
+		9B9F7B9A22104562009C9359 /* TAUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B9F7B9B22104562009C9359 /* TAUUITests.swift */,
+				9B9F7B9D22104562009C9359 /* Info.plist */,
+			);
+			path = TAUUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +163,24 @@
 			productReference = 9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9B9F7B9822104561009C9359 /* TAUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9F7BA222104562009C9359 /* Build configuration list for PBXNativeTarget "TAUUITests" */;
+			buildPhases = (
+				9B9F7B9522104561009C9359 /* Sources */,
+				9B9F7B9622104561009C9359 /* Frameworks */,
+				9B9F7B9722104561009C9359 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9F7B9F22104562009C9359 /* PBXTargetDependency */,
+			);
+			name = TAUUITests;
+			productName = TAUUITests;
+			productReference = 9B9F7B9922104561009C9359 /* TAUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +195,10 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					9B5BC71D220F55D20047CFA4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9B5BC709220F55C20047CFA4;
+					};
+					9B9F7B9822104561009C9359 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 9B5BC709220F55C20047CFA4;
 					};
@@ -168,6 +219,7 @@
 			targets = (
 				9B5BC709220F55C20047CFA4 /* TAU */,
 				9B5BC71D220F55D20047CFA4 /* TAUTests */,
+				9B9F7B9822104561009C9359 /* TAUUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +236,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B5BC71C220F55D20047CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9F7B9722104561009C9359 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +269,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B9F7B9522104561009C9359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9F7B9C22104562009C9359 /* TAUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +284,11 @@
 			isa = PBXTargetDependency;
 			target = 9B5BC709220F55C20047CFA4 /* TAU */;
 			targetProxy = 9B5BC71F220F55D20047CFA4 /* PBXContainerItemProxy */;
+		};
+		9B9F7B9F22104562009C9359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5BC709220F55C20047CFA4 /* TAU */;
+			targetProxy = 9B9F7B9E22104562009C9359 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,6 +510,44 @@
 			};
 			name = Release;
 		};
+		9B9F7BA022104562009C9359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Debug;
+		};
+		9B9F7BA122104562009C9359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,6 +574,15 @@
 			buildConfigurations = (
 				9B5BC72B220F55D20047CFA4 /* Debug */,
 				9B5BC72C220F55D20047CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9F7BA222104562009C9359 /* Build configuration list for PBXNativeTarget "TAUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9F7BA022104562009C9359 /* Debug */,
+				9B9F7BA122104562009C9359 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
