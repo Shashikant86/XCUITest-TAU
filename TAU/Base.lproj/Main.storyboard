@@ -19,12 +19,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your City " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-4R-D9X" userLabel="enter City">
                                 <rect key="frame" x="109" y="324.5" width="171" height="32"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enterCity"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvd-B2-mZv" userLabel="city Value">
                                 <rect key="frame" x="192.5" y="425" width="29" height="46"/>
+                                <accessibility key="accessibilityConfiguration" identifier="city"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,6 +34,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9p-mP-Amt" userLabel="enroll">
                                 <rect key="frame" x="25" y="539" width="369" height="41"/>
                                 <color key="backgroundColor" red="1" green="0.4687319969347471" blue="0.26311417288637096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enrollButton"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Enroll">
@@ -49,10 +52,14 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAU" translatesAutoresizingMaskIntoConstraints="NO" id="jGA-iB-3kK">
                                 <rect key="frame" x="141.5" y="687.5" width="135" height="135"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TAUlogo">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to XCUITest Course " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-Xj-u7T" userLabel="welcome ToXCUI Test">
                                 <rect key="frame" x="68" y="224.5" width="285" height="26.5"/>
                                 <color key="backgroundColor" red="0.27145191120000001" green="1" blue="0.12615127810000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="welcomeMessage"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
