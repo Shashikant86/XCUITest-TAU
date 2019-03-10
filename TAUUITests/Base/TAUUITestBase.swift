@@ -8,16 +8,20 @@
 
 import Foundation
 import XCTest
+import EyesXCUI
 
 class TAUUITestBase: XCTestCase {
     
     var app = XCUIApplication()
     
+    var eyes = Eyes()
+    
+    
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app.launch()
-       
+        eyes.apiKey = "MY-API-KEY"
     }
     
     override func tearDown() {
