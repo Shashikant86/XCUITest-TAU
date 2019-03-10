@@ -27,6 +27,11 @@ class TAUUITestBase: XCTestCase {
     override func tearDown() {
         super.tearDown()
         app.terminate()
-     
+        // End the Applitools test
+        do {
+            try eyes.close()
+        } catch {
+            eyes.abortIfNotClosed()
+        }
     }
 }
