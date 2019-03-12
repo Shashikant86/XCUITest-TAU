@@ -1,0 +1,11 @@
+language: swift
+osx_image: xcode10.1
+branches:
+  only:
+    - chapter8
+
+before_install:
+  - gem install fastlane --no-ri --no-rdoc --no-document
+install: true
+script:
+  - fastlane scan -s TAU
