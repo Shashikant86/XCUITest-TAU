@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TAUUITests.xctest' tests='4' failures='0'>
+  <testsuite name='TAUUITests.BDDTest' tests='1' failures='0'>
+    <testcase classname='TAUUITests.BDDTest' name='testThankYouMessageInBDStyle' time='8.707'/>
+  </testsuite>
+  <testsuite name='TAUUITests.TAUEyeTest' tests='1' failures='0'>
+    <testcase classname='TAUUITests.TAUEyeTest' name='testTAUApplitoolsEye' time='19.278'/>
+  </testsuite>
+  <testsuite name='TAUUITests.TAUUITests' tests='2' failures='0'>
+    <testcase classname='TAUUITests.TAUUITests' name='testAllElementsOfMainScreen' time='7.454'/>
+    <testcase classname='TAUUITests.TAUUITests' name='testThankYouMessage' time='8.053'/>
+  </testsuite>
+</testsuites>

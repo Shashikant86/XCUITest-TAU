@@ -21,7 +21,7 @@ class TAUUITestBase: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app.launch()
-        eyes.apiKey = "MY-API-KEY"
+        eyes.apiKey = "q988s9B4KHDcPJuL31wYQFQv5qSbNYnkvC78TQL105FTpI110"
     }
     
     override func tearDown() {

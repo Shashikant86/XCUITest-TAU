@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BA67BD8221A146700640F28"
+               BlueprintIdentifier = "9B9F7B9822104561009C9359"
                BuildableName = "TAUUITests.xctest"
                BlueprintName = "TAUUITests"
                ReferencedContainer = "container:TAU.xcodeproj">
