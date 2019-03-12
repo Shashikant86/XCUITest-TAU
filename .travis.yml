@@ -8,4 +8,5 @@ before_install:
   - gem install fastlane --no-ri --no-rdoc --no-document
 install: true
 script:
+  - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
   - fastlane scan --scheme TAU --device "iPhone XR"
