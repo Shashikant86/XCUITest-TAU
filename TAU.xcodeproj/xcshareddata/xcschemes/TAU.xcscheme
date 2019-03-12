@@ -47,6 +47,11 @@
                BlueprintName = "TAUUITests"
                ReferencedContainer = "container:TAU.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TAUEyeTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
