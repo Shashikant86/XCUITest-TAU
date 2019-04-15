@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func enrollButton(_ sender: Any) {
         thanksMessage.isHidden = false
-        
+        //adding this line hides the keyboard when we tap the button
+        cityValue.resignFirstResponder()
         if cityValue.text == "" {
             thanksMessage.text = "Please Enter City"
             thanksMessage.textColor = UIColor.red
