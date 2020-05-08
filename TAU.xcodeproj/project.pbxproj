@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		458D72AB2465B14800FC15F6 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D72AA2465B14800FC15F6 /* TAUUITests.swift */; };
 		45CCA2C424659DB8003553FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CCA2C324659DB8003553FC /* AppDelegate.swift */; };
 		45CCA2C624659DB8003553FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CCA2C524659DB8003553FC /* SceneDelegate.swift */; };
 		45CCA2C824659DB8003553FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CCA2C724659DB8003553FC /* ViewController.swift */; };
@@ -17,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		458D72AD2465B14800FC15F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45CCA2B824659DB8003553FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45CCA2BF24659DB8003553FC;
+			remoteInfo = TAU;
+		};
 		45CCA2D724659DBA003553FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45CCA2B824659DB8003553FC /* Project object */;
@@ -27,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		458D72A82465B14800FC15F6 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		458D72AA2465B14800FC15F6 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
+		458D72AC2465B14800FC15F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CCA2C024659DB8003553FC /* TAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CCA2C324659DB8003553FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45CCA2C524659DB8003553FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		458D72A52465B14800FC15F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45CCA2BD24659DB8003553FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,11 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		458D72A92465B14800FC15F6 /* TAUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				458D72AA2465B14800FC15F6 /* TAUUITests.swift */,
+				458D72AC2465B14800FC15F6 /* Info.plist */,
+			);
+			path = TAUUITests;
+			sourceTree = "<group>";
+		};
 		45CCA2B724659DB8003553FC = {
 			isa = PBXGroup;
 			children = (
 				45CCA2C224659DB8003553FC /* TAU */,
 				45CCA2D924659DBA003553FC /* TAUTests */,
+				458D72A92465B14800FC15F6 /* TAUUITests */,
 				45CCA2C124659DB8003553FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +100,7 @@
 			children = (
 				45CCA2C024659DB8003553FC /* TAU.app */,
 				45CCA2D624659DBA003553FC /* TAUTests.xctest */,
+				458D72A82465B14800FC15F6 /* TAUUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +131,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		458D72A72465B14800FC15F6 /* TAUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458D72AF2465B14800FC15F6 /* Build configuration list for PBXNativeTarget "TAUUITests" */;
+			buildPhases = (
+				458D72A42465B14800FC15F6 /* Sources */,
+				458D72A52465B14800FC15F6 /* Frameworks */,
+				458D72A62465B14800FC15F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458D72AE2465B14800FC15F6 /* PBXTargetDependency */,
+			);
+			name = TAUUITests;
+			productName = TAUUITests;
+			productReference = 458D72A82465B14800FC15F6 /* TAUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		45CCA2BF24659DB8003553FC /* TAU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45CCA2EA24659DBA003553FC /* Build configuration list for PBXNativeTarget "TAU" */;
@@ -146,6 +193,10 @@
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				TargetAttributes = {
+					458D72A72465B14800FC15F6 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 45CCA2BF24659DB8003553FC;
+					};
 					45CCA2BF24659DB8003553FC = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -170,11 +221,19 @@
 			targets = (
 				45CCA2BF24659DB8003553FC /* TAU */,
 				45CCA2D524659DBA003553FC /* TAUTests */,
+				458D72A72465B14800FC15F6 /* TAUUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		458D72A62465B14800FC15F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45CCA2BE24659DB8003553FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +254,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		458D72A42465B14800FC15F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458D72AB2465B14800FC15F6 /* TAUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45CCA2BC24659DB8003553FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +283,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		458D72AE2465B14800FC15F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45CCA2BF24659DB8003553FC /* TAU */;
+			targetProxy = 458D72AD2465B14800FC15F6 /* PBXContainerItemProxy */;
+		};
 		45CCA2D824659DBA003553FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45CCA2BF24659DB8003553FC /* TAU */;
@@ -243,6 +315,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		458D72B02465B14800FC15F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGXD5E6AF8;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Debug;
+		};
+		458D72B12465B14800FC15F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGXD5E6AF8;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Release;
+		};
 		45CCA2E824659DBA003553FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +550,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		458D72AF2465B14800FC15F6 /* Build configuration list for PBXNativeTarget "TAUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458D72B02465B14800FC15F6 /* Debug */,
+				458D72B12465B14800FC15F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45CCA2BB24659DB8003553FC /* Build configuration list for PBXProject "TAU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
