@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,24 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your City " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-4R-D9X" userLabel="enter City">
-                                <rect key="frame" x="109" y="324.5" width="171" height="32"/>
-                                <accessibility key="accessibilityConfiguration" identifier="enterCity"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvd-B2-mZv" userLabel="city Value">
-                                <rect key="frame" x="192.5" y="425" width="29" height="46"/>
+                                <rect key="frame" x="57" y="364.5" width="300" height="51.5"/>
                                 <accessibility key="accessibilityConfiguration" identifier="city"/>
-                                <nil key="textColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iDV-At-L7S"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9p-mP-Amt" userLabel="enroll">
-                                <rect key="frame" x="25" y="539" width="369" height="41"/>
+                                <rect key="frame" x="172" y="446" width="70" height="41"/>
                                 <color key="backgroundColor" red="1" green="0.4687319969347471" blue="0.26311417288637096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="enrollButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="pJO-8c-Qbk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Enroll">
@@ -45,42 +42,55 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYa-Pl-TPc" userLabel="thanks Message">
-                                <rect key="frame" x="25" y="648" width="369" height="27.5"/>
+                                <rect key="frame" x="179.5" y="517" width="55" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAU" translatesAutoresizingMaskIntoConstraints="NO" id="jGA-iB-3kK">
-                                <rect key="frame" x="141.5" y="687.5" width="135" height="135"/>
+                                <rect key="frame" x="162" y="574.5" width="90" height="90"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TAUlogo">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to XCUITest Course " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-Xj-u7T" userLabel="welcome ToXCUI Test">
-                                <rect key="frame" x="68" y="224.5" width="285" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to XCUITest Course " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-Xj-u7T" userLabel="welcome ToXCUI Test">
+                                <rect key="frame" x="57" y="224.5" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.27145191120000001" green="1" blue="0.12615127810000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="welcomeMessage"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Tc-1f-zx9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="mCO-nq-tcx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your City " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-4R-D9X" userLabel="enter City">
+                                <rect key="frame" x="107" y="294.5" width="200" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enterCity"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0mg-IK-67p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3OR-SA-pFz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hYa-Pl-TPc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7JR-9B-J4q"/>
-                            <constraint firstItem="eFW-4R-D9X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-12.5" id="AOm-aE-zRs"/>
-                            <constraint firstItem="wvd-B2-mZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EP9-IX-G6K"/>
-                            <constraint firstItem="49w-Xj-u7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3.5" id="FvQ-q5-m8V"/>
-                            <constraint firstItem="H9p-mP-Amt" firstAttribute="top" secondItem="wvd-B2-mZv" secondAttribute="bottom" constant="68" id="KYg-nV-FDV"/>
-                            <constraint firstItem="H9p-mP-Amt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="OTZ-xD-9lE"/>
-                            <constraint firstItem="eFW-4R-D9X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-107.5" id="YbM-yL-NPv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9p-mP-Amt" secondAttribute="trailing" constant="20" id="ZP7-xS-SKm"/>
-                            <constraint firstItem="49w-Xj-u7T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-210.5" id="cBV-Oh-IPr"/>
-                            <constraint firstItem="jGA-iB-3kK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="307" id="g6o-ng-kqs"/>
-                            <constraint firstItem="wvd-B2-mZv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pKU-nT-Pu0"/>
-                            <constraint firstItem="jGA-iB-3kK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="tpu-qA-Kh0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYa-Pl-TPc" secondAttribute="trailing" constant="20" id="xVp-gv-00V"/>
-                            <constraint firstItem="hYa-Pl-TPc" firstAttribute="top" secondItem="H9p-mP-Amt" secondAttribute="bottom" constant="68" id="zHH-6z-DPC"/>
+                            <constraint firstItem="hYa-Pl-TPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8x0-tZ-syF"/>
+                            <constraint firstItem="wvd-B2-mZv" firstAttribute="top" secondItem="eFW-4R-D9X" secondAttribute="bottom" constant="30" id="Amz-kO-6aZ"/>
+                            <constraint firstItem="H9p-mP-Amt" firstAttribute="top" secondItem="wvd-B2-mZv" secondAttribute="bottom" constant="30" id="CL9-4i-V19"/>
+                            <constraint firstItem="49w-Xj-u7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GYf-BC-6ah"/>
+                            <constraint firstItem="wvd-B2-mZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H4e-Fi-xq3"/>
+                            <constraint firstItem="jGA-iB-3kK" firstAttribute="top" secondItem="hYa-Pl-TPc" secondAttribute="bottom" constant="30" id="NDF-kw-GPN"/>
+                            <constraint firstItem="H9p-mP-Amt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y1o-yJ-oFj"/>
+                            <constraint firstItem="49w-Xj-u7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180.5" id="c9w-k2-Xnh"/>
+                            <constraint firstItem="jGA-iB-3kK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmX-Mu-Kzd"/>
+                            <constraint firstItem="eFW-4R-D9X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0q-zH-4aP"/>
+                            <constraint firstItem="hYa-Pl-TPc" firstAttribute="top" secondItem="H9p-mP-Amt" secondAttribute="bottom" constant="30" id="lFq-Qa-MN2"/>
+                            <constraint firstItem="eFW-4R-D9X" firstAttribute="top" secondItem="49w-Xj-u7T" secondAttribute="bottom" constant="30" id="vFf-zN-IIO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -97,6 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TAU" width="135" height="135"/>
+        <image name="TAU" width="90" height="90"/>
     </resources>
 </document>
