@@ -6,4 +6,4 @@ branches:
   - updatedForSwift5
 
 script:
- - xcodebuild -workspace TAU.xcworkspace -scheme TAU -destination 'platform=iOS simulator,iOS 13.4,id=F5281727-511E-42F4-8690-34F441C062D7' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+ - xcodebuild -workspace TAU.xcworkspace -scheme TAU -destination 'platform:iOS Simulator, id:35FCDE39-9679-4A66-A338-9EE7801F5092, OS:13.4.1, name:iPhone SE (2nd generation)' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
