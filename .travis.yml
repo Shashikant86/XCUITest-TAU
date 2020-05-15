@@ -1,8 +1,9 @@
+os: osx
 language: swift
-osx_image: xcode11.4.1
+osx_image: xcode11.4
 branches:
-only:
-- updatedForSwift5
+ only:
+  - updatedForSwift5
 
 script:
- - xcodebuild -workspace TAU.xcworkspace -scheme TAU -destination 'platform=iOS simulator,OS=13.4,id=F5281727-511E-42F4-8690-34F441C062D7' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+ - xcodebuild -workspace TAU.xcworkspace -scheme TAU -destination 'platform=iOS simulator,iOS 13.4,id=F5281727-511E-42F4-8690-34F441C062D7' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
