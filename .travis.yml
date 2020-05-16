@@ -1,0 +1,9 @@
+os: osx
+language: swift
+osx_image: xcode11.4
+branches:
+ only:
+  - updatedForSwift5
+
+script:
+ - xcodebuild -workspace TAU.xcworkspace -scheme TAU -destination 'platform=iOS Simulator,name=iPhone 8' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO

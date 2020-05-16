@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        thanksMessage.isHidden = true
+       thanksMessage.isHidden = true
         
     }
 
