@@ -1,0 +1,8 @@
+language: swift
+osx_image: xcode10.1
+branches: main
+before install: 
+  - gem install fastlane --no-ri --no-rdoc --no-document
+install: true
+script: 
+  - fastlane scan -scheme TAU --device "iPhone XR"

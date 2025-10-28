@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24C5F38F2EB1144D0020C9C0 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5F38C2EB1144D0020C9C0 /* TAUUITests.swift */; };
-		24C5F3902EB1144D0020C9C0 /* TAUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5F38D2EB1144D0020C9C0 /* TAUUITestsLaunchTests.swift */; };
 		24C5F3932EB114630020C9C0 /* TAUUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5F3912EB114630020C9C0 /* TAUUITestBase.swift */; };
 		24C5F39C2EB1146D0020C9C0 /* TAUElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5F39A2EB1146D0020C9C0 /* TAUElements.swift */; };
 		24C5F39D2EB1146D0020C9C0 /* TAUSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5F3942EB1146D0020C9C0 /* TAUSteps.swift */; };
@@ -39,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2429E9C02EB122AF0050054E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24C5F3812EB114460020C9C0 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5F38C2EB1144D0020C9C0 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
-		24C5F38D2EB1144D0020C9C0 /* TAUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24C5F3912EB114630020C9C0 /* TAUUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestBase.swift; sourceTree = "<group>"; };
 		24C5F3942EB1146D0020C9C0 /* TAUSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUSteps.swift; sourceTree = "<group>"; };
 		24C5F3962EB1146D0020C9C0 /* BDDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDTest.swift; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 			children = (
 				24C5F3962EB1146D0020C9C0 /* BDDTest.swift */,
 				24C5F38C2EB1144D0020C9C0 /* TAUUITests.swift */,
-				24C5F38D2EB1144D0020C9C0 /* TAUUITestsLaunchTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -137,6 +135,7 @@
 				9B5BC721220F55D20047CFA4 /* TAUTests */,
 				24C5F38E2EB1144D0020C9C0 /* TAUUITests */,
 				9B5BC70B220F55C20047CFA4 /* Products */,
+				2429E9C02EB122AF0050054E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,7 +309,6 @@
 				24C5F3A02EB1146D0020C9C0 /* BDDTest.swift in Sources */,
 				24C5F38F2EB1144D0020C9C0 /* TAUUITests.swift in Sources */,
 				24C5F3932EB114630020C9C0 /* TAUUITestBase.swift in Sources */,
-				24C5F3902EB1144D0020C9C0 /* TAUUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,10 @@
+//
+//  .gitignore
+//  TAU
+//
+//  Created by Dina Kazakevich on 28/10/25.
+//  Copyright © 2025 Shashikant Jagtap. All rights reserved.
+//
+
+.DS_Store
+TAU.xcodeproj/project.xcworkspace/xcuserdata/dinakazakevich.xcuserdatad/UserInterfaceState.xcuserstate
